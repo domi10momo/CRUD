@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get '/users/new', to: 'users#new'
-  post '/users/create', to: 'users#create'
-  get '/users/index'
+  post '/users', to: 'users#create'
+  get '/users', to: 'users#index'
   get '/users/show'
   get '/users/edit'
   get '/users/update'
