@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   post '/users', to: 'users#create'
   get '/users', to: 'users#index'
   get '/users/show'
-  get '/users/edit'
-  get '/users/update'
+  get '/users/:id/edit', to: 'users#edit'
+  patch '/users/:id', to: 'users#update'
   delete '/users/:id', to: 'users#destroy'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
